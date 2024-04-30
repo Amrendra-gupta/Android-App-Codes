@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".EnergyCount">
+
+    <LinearLayout
+        android:id="@+id/blub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Bulb 9W"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/blubmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:text="0 min"
+            android:textSize="22sp" />
+        <ImageButton
+            android:id="@+id/subblub"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="img"
+            app:srcCompat="@drawable/minus" />
+        <ImageButton
+            android:id="@+id/addblub"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="img"
+            app:srcCompat="@drawable/plus_sign" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@+id/blub">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Fan 60W"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/fanmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:text="0 min"
+            android:textSize="22sp" />
+        <ImageButton
+            android:id="@+id/subfan"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="img"
+            app:srcCompat="@drawable/minus" />
+        <ImageButton
+            android:id="@+id/addfan"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="img"
+            app:srcCompat="@drawable/plus_sign" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/charger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fan"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Cahrger 15W"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/chargermin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="0 min"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/subcharger"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="img"
+            app:srcCompat="@drawable/minus" />
+
+        <ImageButton
+            android:id="@+id/addcharger"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="img"
+            app:srcCompat="@drawable/plus_sign" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/laptop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/charger">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Laptop 65W"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/laptopmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="0 min"
+            android:textSize="22sp" />
+        <ImageButton
+            android:id="@+id/sublaptop"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="img"
+            app:srcCompat="@drawable/minus" />
+        <ImageButton
+            android:id="@+id/addlaptop"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="img"
+            app:srcCompat="@drawable/plus_sign" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/laptop"
+        android:text="Current Balance :  0 W"
+        android:textSize="25sp"
+        android:layout_margin="16dp"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current"
+        android:text="Update"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>
